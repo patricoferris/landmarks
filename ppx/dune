@@ -4,6 +4,8 @@
  (private_modules mapper register)
  (flags -open Migrate_parsetree -open Ast_408)
  (kind ppx_rewriter)
+ (instrumentation.backend
+  (ppx landmarks.ppx))
  (libraries ocaml-migrate-parsetree)
  (preprocess
   (pps compatibility)))
